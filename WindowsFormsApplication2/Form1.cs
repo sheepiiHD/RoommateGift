@@ -45,9 +45,9 @@ namespace WindowsFormsApplication2
                 TimeSpan end = new TimeSpan(8, 0, 0);
 
                 int minute = 60000; // Minute in milliseconds
-                int idle_stage1 = minute * 1;
-                int idle_stage2 = minute * 2;
-                int idle_stage3 = minute * 3;
+                int idle_stage1 = minute * 30;
+                int idle_stage2 = minute * 59;
+                int idle_stage3 = minute * 60;
 
                 if (IsBetween(DateTime.Now, start, end))
                 {
